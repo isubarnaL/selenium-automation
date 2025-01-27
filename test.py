@@ -10,7 +10,7 @@ driver.get("https://www.linkedin.com")
 
 expected_title = "LinkedIn: Log In or Sign Up"
  actual_title = driver.title
-
+# verifying title
 if actual_title == expected_title:
     print("Title verification passed.")
 else:
