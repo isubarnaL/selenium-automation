@@ -9,12 +9,11 @@ driver = webdriver.Edge(service=service)
 driver.get("https://www.linkedin.com")
 
 expected_title = "LinkedIn: Log In or Sign Up"
-actual_title = driver.title
+ actual_title = driver.title
 
 if actual_title == expected_title:
     print("Title verification passed.")
 else:
-    print(f"Title verification failed! Expected: '{expected_title}', but got: '{actual_title}'")
-
+    print(f"Title verification failed. Expected: '{expected_title}', but got: '{actual_title}'")
 
 driver.quit()
